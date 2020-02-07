@@ -11,7 +11,10 @@ const increaseBet = () => {
 };
 
 function spin() {
-  balance = balance - bet;
+  if(bet.value > balance){
+    document.getElementById("balanceDisplay").textContent = "Your balance is too low"
+    return
+  }
   //alert(bet)
   let final = [];
   final.push(spinReel("r1"));
@@ -20,8 +23,10 @@ function spin() {
   //Check if the reels match up by checking 1 and 0 & 0 and 2
   if (final[0] == final[1] && final[1] == final[2]) {
     document.getElementById("status").src = "images/BigWin.png";
+    balance = balance - bet.value;
   } else {
     document.getElementById("status").src = "images/Fail.png";
+    balance = balance += bet.value;
   }
   update_theScrene();
   console.log(bet.value)

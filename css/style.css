@@ -1,0 +1,38 @@
+body{
+  font-family: 'Brandon Grotesque' ,Arial,sans-serif;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.SlotImages {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 30px;
+}
+img{
+  margin: 20px 10px;
+  padding: 10px;
+}
+.Start{
+  display: flex;
+  justify-content: center;
+}
+.stats{
+  position: absolute;
+  margin: 10px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-content: flex-start;
+}
+input{
+  height: 20px;
+  width: 100px;
+}
+.picture{
+  display: flex;
+  justify-content: space-around;
+}

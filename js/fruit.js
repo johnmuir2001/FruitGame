@@ -58,5 +58,5 @@ function spinReel(reel) {
 }
 
 const update_theScrene = () => {
-  document.getElementById("balanceDisplay").innerHTML = balance;
+  document.getElementById("balanceDisplay").textContent = balance;
 };
